@@ -1,0 +1,8 @@
+psutil>=5.9
+textual>=0.50
+watchdog>=3.0
+
+# Windows-only: needed for the Security event-log auth reader (win32evtlog).
+# The platform marker means pip installs it ONLY on Windows, so the same
+# requirements.txt is safe on Linux/macOS.
+pywin32>=306; sys_platform == "win32"
